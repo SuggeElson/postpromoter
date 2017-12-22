@@ -134,14 +134,14 @@ function vote(bids) {
 
   // If there are more bids, vote on the next one after 20 seconds
   if(bids.length > 0) {
-    setTimeout(function() { vote(bids); }, 30000);
+    setTimeout(function() { vote(bids); }, 5000);
   } else {
     setTimeout(function() {
       utils.log('=======================================================');
       utils.log('Voting Complete!');
       utils.log('=======================================================');
       isVoting = false;
-    }, 30000);
+    }, 5000);
   }
 }
 
